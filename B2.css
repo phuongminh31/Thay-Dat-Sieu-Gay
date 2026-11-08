@@ -1,0 +1,31 @@
+/* h1:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: pink;
+    color: white;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+} */
+
+.input-container{
+    width: 40%;
+    height: 100px;
+    border: 10px;
+    margin: auto;
+}
+.output-container{
+    width: 40%;
+    height: 100px;
+    border: 10px;
+    margin: auto;
+    background-color: grey;
+    border-radius: 10px;
+}

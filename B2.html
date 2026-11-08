@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/B2.css">
+</head>
+<body>
+    <h1 id="Cau_hoi">Thay Phuc gay</h1>
+    <div id="button1">
+        <button class="button1" onclick="document.getElementById('Cau_hoi').style.color='pink'; document.getElementById('Cau_hoi').style.transition='all 0.3s ease'">Dong tinhs</button>
+    </div>
+    <div id="button2">
+        <button class="button2" onclick="changeSevenColors(Pink)">Dong tinhf</button>
+    </div>
+
+    <script>
+        const colors = ['pink', 'blue', 'green', 'orange', 'purple', 'red', 'yellow'];
+        let colorIndex = 0;
+
+        function changeSevenColors() {
+            document.getElementById('Cau_hoi').style.color = colors[colorIndex];
+            colorIndex = (colorIndex + 1) % colors.length;
+        }
+
+        setInterval(changeSevenColors, 500);
+    </script>
+    
+    <!-- <div>
+        <div class = "input-container">
+            <h2>Name</h2>
+            <input type="text" id="myInput" placeholder="Enter text">
+                <button onclick="changeColor()">Enter</button>
+        </div>
+        <div class = "output-container">
+            <h2>Output</h2>
+            <p id="output"></p>
+        </div>
+    </div> -->
+
+
+</body>
+</html>
